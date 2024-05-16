@@ -2,12 +2,65 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>LOANS.COM</title>
   </head>
+
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+  <header class="header container">
+      <a href="#" class="header_logo">Loans.com</a>
+    <nav class="nav">
+      <ul class="nav_list">
+        <li class="nav_element"><a href="#">Rates & Fees</a></li>
+        <li class="nav_element"><a href="#">How to apply</a></li>
+        <li class="nav_element"><a href="#">Questions?</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main container">
+    <section class="main_info">
+      <div class="into_info">
+        <span class="info_small_text">Personal Loan</span>
+        <h2 class="info_normal_text">Put your plans into actions!</h2>
+      <div class="info_icons">
+        <div class="icons_item">
+          <span class="item_text">Online application</span>
+        </div>
+        <div class="icons_item">
+          <span class="item_text">Up to $50.000</span>
+        </div>
+        <div class="icons_item">
+          <span class="item_text">The money is yours in 48h</span>
+        </div>
+      </div>
+      </div>
+
+      <div class="intro_form">
+        <h3 class="form_heading">Let's change your life?</h3>
+        <form>
+          <div class="form_field">
+            <label for="name">Full name</label>
+            <input type="text" class="form_input" id="name" placeholder="Janusz Kowalski" />
+          </div>
+          <div class="form_field">
+            <label for="email">E-mail</label>
+            <input type="email" class="form_input" id="email" placeholder="janusz.kowalski@buziaczek.pl" />
+          </div>
+          <div class="form_field">
+            <label for="amount">How much do you need?</label>
+            <input type="number" class="form_input" id="amount" placeholder="1.000 PLN" />
+          </div>
+          <button type="submit" class="form_button">Check your rates</button>
+        </form>
+      </div>
+    </section>
+  </main>
   </body>
 </html>
