@@ -61,7 +61,7 @@ body {
 /*MAIN*/
 
 .main {
-  height: calc(100vh - 80p  x);
+  height: calc(100vh - 80px);
   display: flex;
   align-items: center;
 }
@@ -80,7 +80,7 @@ body {
 }
 
 .info_normal_text {
-  font-width: 700;
+  font-weight: 700;
   font-size: 4rem;
   color: var(--main-color);
 }
